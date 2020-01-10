@@ -4,18 +4,20 @@ public class Main {
     public static void main(String[] args) {
         Burger burger = new Burger("Standard", "Beef", 2.55, "Dark");
         // double price = burger.itemizeBurger();
-        burger.addHamburgerAddition1("Tomato", 0.31);
-        burger.addHamburgerAddition2("Lettuce", 0.52);
-        burger.addHamburgerAddition3("Onion", 0.23);
-        burger.addHamburgerAddition4("Carrot", 0.44);
+        burger.addBurgerAddition1("Tomato", 0.31);
+        burger.addBurgerAddition2("Lettuce", 0.52);
+        burger.addBurgerAddition3("Onion", 0.23);
+        burger.addBurgerAddition4("Carrot", 0.44);
 
         System.out.println("Total burger price is = " + burger.itemizeBurger()); 
 
-        HealthyBurger healthyBurger = new HealthyBurger("Chicken", 5.45);
-        
         System.out.println("------------");
         
-        healthyBurger.itemizeBurger();
+        HealthyBurger healthyBurger = new HealthyBurger("Chicken", 5.45);
+        healthyBurger.addBurgerAddition1("Avocado", 0.75);
+        healthyBurger.addHealthyAddition1("Tofu", 1.01);
+        System.out.println("Total Healthy Burger price is " +  healthyBurger.itemizeBurger());
+
     }
 
 }
