@@ -18,6 +18,12 @@ public class Main {
         healthyBurger.addHealthyAddition1("Tofu", 1.01);
         System.out.println("Total Healthy Burger price is " +  healthyBurger.itemizeBurger());
 
+        System.out.println("------------");
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        deluxeBurger.addBurgerAddition1("dont", 4.72);
+        // deluxeBurger.itemizeBurger();
+
     }
 
 }
