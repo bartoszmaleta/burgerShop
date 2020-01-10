@@ -10,5 +10,12 @@ public class Main {
         burger.addHamburgerAddition4("Carrot", 0.44);
 
         System.out.println("Total burger price is = " + burger.itemizeBurger()); 
+
+        HealthyBurger healthyBurger = new HealthyBurger("Chicken", 5.45);
+        
+        System.out.println("------------");
+        
+        healthyBurger.itemizeBurger();
     }
+
 }

@@ -69,9 +69,6 @@ public class Burger {
             burgerPrice += this.addition4Price;
             System.out.println("Added " + this.addition4Name + " for an extra " + this.addition4Price);
         }
-
         return burgerPrice;
     }
-
-    
 }
